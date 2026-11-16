@@ -1,4 +1,4 @@
-# dep-bootstrap — development guide
+# dep-common — development guide
 
 ## Purpose
 
@@ -24,8 +24,8 @@ Bootstrap script that installs and initializes the `dep` package manager (built 
 Set `local-SNAPSHOT` in your `.envrc` to point dep at local checkouts instead of GitHub:
 
 ```bash
-export local_SNAPSHOT="$(dirname "$(pwd)")/envrc-framework"  # for envrc-framework
-# dep-bootstrap itself uses SNAPSHOT via the DEP_REPO_BASE_URL env var
+export local_SNAPSHOT="$(dirname "$(pwd)")/envrc-common"  # for envrc-common
+# dep-common itself uses SNAPSHOT via the DEP_REPO_BASE_URL env var
 ```
 
 The `bootstrap.sh` checks for `local-SNAPSHOT` tag and uses a symlink in `~/.dep/repository/` instead of cloning.

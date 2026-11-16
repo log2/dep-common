@@ -1,8 +1,8 @@
-# dep-bootstrap — status
+# dep-common — status
 
 ## Health: stable, low activity
 
-- bootstrap.sh v0.5.5 — has been stable for a long time
+- dep-common v0.1.0 (bootstrap.sh internally reports scriptVersion 0.5.5, inherited from the original dep runtime) — stable
 - No known bugs in the dep runtime
 
 ## Known limitations
@@ -14,12 +14,12 @@
 
 ## Tech debt
 
-- Long-term: replace dep/basher with a simpler local-path sourcing mechanism (item 6 in owncluster roadmap)
+- Long-term: replace dep/basher with a simpler local-path sourcing mechanism (item 6 in owncluster roadmap (see owncluster/STATUS.md))
 - `dep-bootstrap.sh` clones this repo at startup via git; DNS failure breaks the entire `.envrc` load
 
 ## Dependencies
 
 None — this is the bootstrapper. Loaded by all other repos via:
 ```bash
-. "$_DEP_BOOTSTRAP" 0.5.5
+. "$_DEP_BOOTSTRAP" v0.1.0
 ```
