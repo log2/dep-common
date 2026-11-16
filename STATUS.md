@@ -2,7 +2,7 @@
 
 ## Health: stable, low activity
 
-- dep-common v0.1.0 (bootstrap.sh internally reports scriptVersion 0.5.5, inherited from the original dep runtime) — stable
+- dep-common v0.1.1 (bootstrap.sh `scriptVersion` is aligned with the git tag, 0.1.1) — stable
 - No known bugs in the dep runtime
 
 ## Known limitations

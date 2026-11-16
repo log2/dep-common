@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 scriptName=bootstrap.sh
-scriptVersion=0.5.5
+scriptVersion=0.1.1
 logLinePrefix="[dep]"
 
 # Levels:

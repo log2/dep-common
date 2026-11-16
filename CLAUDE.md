@@ -32,7 +32,7 @@ The `bootstrap.sh` checks for `local-SNAPSHOT` tag and uses a symlink in `~/.dep
 
 ## Releasing
 
-1. Bump `scriptVersion` in `bootstrap.sh`
+1. Bump `scriptVersion` in `bootstrap.sh` to match the tag you are about to create (tag `v0.1.1` → `scriptVersion=0.1.1`)
 2. Commit and push
 3. `git tag <version> && git push origin <version>`
 4. Update all consumer `dep-bootstrap.sh` invocations to the new tag
