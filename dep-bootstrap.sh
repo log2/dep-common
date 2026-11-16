@@ -16,7 +16,7 @@ if [ -z "${DEP_SOURCED:-}" ]; then
     versionDir="$targetDir/bootstrap/$version"
     if [[ ! -d "$versionDir" ]]; then
         if [[ $version == "local-SNAPSHOT" ]]; then
-            echo >&2 "$scriptErrorLabel $versionDir not found. Please create it using following command (replacing '/path/to/my/local' part): 'mkdir -p $versionDir && ln -s /path/to/my/local/dep-bootstrap/bootstrap.sh $versionDir/bootstrap.sh'"
+            echo >&2 "$scriptErrorLabel $versionDir not found. Please create it using following command (replacing '/path/to/my/local' part): 'mkdir -p $versionDir && ln -s /path/to/my/local/dep-common/bootstrap.sh $versionDir/bootstrap.sh'"
             exit 1
         fi
         if [[ ! -d "$gitDir" ]]; then
